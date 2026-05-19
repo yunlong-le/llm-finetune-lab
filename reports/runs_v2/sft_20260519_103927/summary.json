@@ -1,0 +1,17 @@
+{
+  "track": "sft",
+  "run_id": "sft_20260519_103927",
+  "max_steps": 30,
+  "train_size": 192,
+  "eval_size": 24,
+  "train_runtime_sec": 42.60851240158081,
+  "peak_memory_mb": 6463,
+  "train_result": {
+    "train_runtime": 40.6739,
+    "train_samples_per_second": 5.901,
+    "train_steps_per_second": 0.738,
+    "total_flos": 573137134682112.0,
+    "train_loss": 1.6141598224639893
+  },
+  "output_dir": "/root/autodl-tmp/llm-finetune-lab/runs_v2/sft_20260519_103927"
+}

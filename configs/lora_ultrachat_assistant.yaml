@@ -1,0 +1,34 @@
+experiment:
+  name: qwen_lora_ultrachat_assistant
+  track: lora
+model:
+  name_or_path: /root/autodl-tmp/llm-finetune-lab/model/Qwen3-0.6B-Base
+data:
+  source: ultrachat_local
+  path: /root/autodl-tmp/llm-finetune-lab/data/ultrachat_200k
+  train_size: 1024
+  eval_size: 64
+  max_chars: 1800
+  max_length: 1024
+lora:
+  r: 8
+  alpha: 16
+  dropout: 0.05
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+training:
+  output_dir: outputs/lora-ultrachat-assistant
+  assistant_only_loss: true
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 8
+  learning_rate: 2.0e-5
+  max_steps: 120
+  warmup_ratio: 0.1
+  logging_steps: 5
+  eval_steps: 60
+  save_steps: 120
+  bf16: true
+  gradient_checkpointing: true

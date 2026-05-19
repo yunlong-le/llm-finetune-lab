@@ -1,0 +1,1 @@
+{"messages":[{"role":"system","content":"You are a helpful assistant."},{"role":"user","content":"Why should experiment configs be saved with training logs?"},{"role":"assistant","content":"Configs make the result reproducible. They show the model path, data files, batch strategy, learning rate, precision, and checkpoint policy used for the run."}]}

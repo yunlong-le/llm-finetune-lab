@@ -1,0 +1,17 @@
+{
+  "track": "dpo",
+  "run_id": "dpo_20260519_103752",
+  "max_steps": 30,
+  "train_size": 128,
+  "eval_size": 16,
+  "train_runtime_sec": 51.38924837112427,
+  "peak_memory_mb": 11225,
+  "train_result": {
+    "train_runtime": 49.535,
+    "train_samples_per_second": 4.845,
+    "train_steps_per_second": 0.606,
+    "total_flos": 600101671403520.0,
+    "train_loss": 0.6408843517303466
+  },
+  "output_dir": "/root/autodl-tmp/llm-finetune-lab/runs_v2/dpo_20260519_103752"
+}

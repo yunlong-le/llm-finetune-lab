@@ -1,0 +1,18 @@
+{
+  "track": "qlora",
+  "run_id": "qlora_20260519_112634",
+  "max_steps": 40,
+  "train_size": 256,
+  "eval_size": 32,
+  "train_runtime_sec": 75.90508341789246,
+  "peak_memory_mb": 2135,
+  "train_result": {
+    "train_runtime": 75.5642,
+    "train_samples_per_second": 4.235,
+    "train_steps_per_second": 0.529,
+    "total_flos": 297309728931840.0,
+    "train_loss": 1.925683569908142
+  },
+  "output_dir": "/root/autodl-tmp/llm-finetune-lab/runs_v2/qlora_20260519_112634",
+  "assistant_only_loss": true
+}

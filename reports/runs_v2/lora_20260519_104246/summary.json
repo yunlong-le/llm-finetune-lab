@@ -1,0 +1,17 @@
+{
+  "track": "lora",
+  "run_id": "lora_20260519_104246",
+  "max_steps": 120,
+  "train_size": 1024,
+  "eval_size": 64,
+  "train_runtime_sec": 184.02136731147766,
+  "peak_memory_mb": 3031,
+  "train_result": {
+    "train_runtime": 183.6821,
+    "train_samples_per_second": 5.226,
+    "train_steps_per_second": 0.653,
+    "total_flos": 2257580110381056.0,
+    "train_loss": 1.741360886891683
+  },
+  "output_dir": "/root/autodl-tmp/llm-finetune-lab/runs_v2/lora_20260519_104246"
+}

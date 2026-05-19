@@ -1,0 +1,27 @@
+experiment:
+  name: qwen_dpo_ultrachat_smoke
+  track: dpo
+model:
+  name_or_path: /root/autodl-tmp/llm-finetune-lab/finetuned/Qwen3-0.6B-SFT
+data:
+  source: ultrachat_dpo
+  path: /root/autodl-tmp/llm-finetune-lab/data/ultrachat_200k
+  train_size: 128
+  eval_size: 16
+  max_chars: 1800
+  max_length: 1024
+  rejected_text: I do not have enough information to answer that well.
+dpo:
+  beta: 0.1
+training:
+  output_dir: outputs/dpo-ultrachat
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 8
+  learning_rate: 1.0e-6
+  max_steps: 30
+  warmup_ratio: 0.1
+  logging_steps: 5
+  eval_steps: 15
+  save_steps: 30
+  bf16: true
+  gradient_checkpointing: true
